@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="horizontal">
+
+    <ImageView android:id="@+id/tab_main"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:background="#f6f6f6"
+        android:padding="4pt"
+        android:onClick="changeFragment"
+        android:src="@drawable/list_btn_2"/>
+
+    <ImageView android:id="@+id/tab_map"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:background="#f6f6f6"
+        android:padding="3pt"
+        android:onClick="changeFragment"
+        android:src="@drawable/map_btn"/>
+
+    <ImageView android:id="@+id/tab_chart"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:background="#f6f6f6"
+        android:padding="5pt"
+        android:onClick="changeFragment"
+        android:src="@drawable/chart_btn"/>
+
+    <ImageView android:id="@+id/tab_analysis"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:background="#f6f6f6"
+        android:padding="3pt"
+        android:onClick="changeFragment"
+        android:src="@drawable/activity_btn"/>
+</LinearLayout>

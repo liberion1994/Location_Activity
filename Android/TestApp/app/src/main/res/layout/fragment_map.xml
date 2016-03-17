@@ -1,0 +1,116 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MapFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <com.amap.api.maps2d.MapView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/my_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/draw_cover_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                app:backgroundTint="#ffffff"
+                android:src="@drawable/draw_cover_btn"
+                app:fabSize="mini"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="top|center"
+                android:gravity="center"
+                android:layout_marginTop="5dp">
+                <Button
+                    android:id="@+id/show_all_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/period_chosen_btn"
+                    android:text="全部"/>
+                <Button
+                    android:id="@+id/show_prev_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/period_chosen_btn"
+                    android:text="P"/>
+                <Button
+                    android:id="@+id/show_act_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/period_chosen_btn"
+                    android:text="活动"/>
+                <Button
+                    android:id="@+id/show_next_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/period_chosen_btn"
+                    android:text="N"/>
+                <Button
+                    android:id="@+id/show_trace_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/period_chosen_btn"
+                    android:text="轨迹"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom|center">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PREV HOUR"
+                    android:onClick="changePrevHour" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEXT HOUR"
+                    android:onClick="changeNextHour"/>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:text="信息" />
+
+            <TextView
+                android:id="@+id/point_info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:text="\n点击一个标记后在此处显示信息\n"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

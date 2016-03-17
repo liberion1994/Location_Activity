@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">位置信息</string>
+    <string name="button_event">COPY EVENTS</string>
+    <string name="button_record">COPY RECORDS</string>
+    <string name="button_start">START</string>
+    <string name="button_end">END</string>
+
+    <string name="title_activity_fullscreen">位置信息采集</string>
+</resources>
